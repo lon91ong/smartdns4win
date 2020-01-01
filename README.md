@@ -1,57 +1,70 @@
 # smartdns4win
 
-[Ô­ÏîÄ¿smartdns](https://github.com/pymumu/smartdns)
+[åŸé¡¹ç›®smartdns](https://github.com/pymumu/smartdns)
 
-## Ê¹ÓÃËµÃ÷
+## ä½¿ç”¨è¯´æ˜
 
-### ÆôÓÃWSL
+### å¯ç”¨WSL
 
-Win10ĞèÒªÓÃlinux×ÓÏµÍ³WSLÖ§³Ö£¬WSLµÄ¿ªÆô·½·¨ÈçÏÂ:
-`PowerShell` ÏÂÖ´ĞĞÒÔÏÂÃüÁî¿ªÆôWSL¹¦ÄÜ:
+Win10éœ€è¦ç”¨linuxå­ç³»ç»ŸWSLæ”¯æŒï¼ŒWSLçš„å¼€å¯æ–¹æ³•å¦‚ä¸‹:
+`PowerShell` ä¸‹æ‰§è¡Œä»¥ä¸‹å‘½ä»¤å¼€å¯WSLåŠŸèƒ½:
 
 ```bash
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux /all
 ```
 
-ÆÕÍ¨ÃüÁîĞĞcmdÏÂÖ´ĞĞ:
+æ™®é€šå‘½ä»¤è¡Œcmdä¸‹æ‰§è¡Œ:
 ```bash
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
 ```
-Èç¹ûÄãÏñÎÒÒ»ÑùÓÃµÄÊÇ¾«¼ò¹ıµÄWin10ÏµÍ³µÄ»°£¬ÉÏÃæµÄÃüÁî»á³ö´í£¬ĞèÒªÓÃµ½[¹¦ÄÜ»Ö¸´°ü](https://moeclub.org/2018/11/27/704/?spm=35.5)£¬ÎÒÏÂÃæ¶ÈÅÌÌá¹©ÁË1809ºÍ1903Á½¸ö°æ±¾µÄ¹¦ÄÜ»Ö¸´°ü£¬×ÔĞĞÑ¡Ôñ¼´¿É¡£¹¦ÄÜ»Ö¸´°üÊ¹ÓÃºóĞèÒªÖØÆô²ÅÄÜÉúĞ§¡£
+å¦‚æœä½ åƒæˆ‘ä¸€æ ·ç”¨çš„æ˜¯ç²¾ç®€è¿‡çš„Win10ç³»ç»Ÿçš„è¯ï¼Œä¸Šé¢çš„å‘½ä»¤ä¼šå‡ºé”™ï¼Œéœ€è¦ç”¨åˆ°[åŠŸèƒ½æ¢å¤åŒ…](https://moeclub.org/2018/11/27/704/?spm=35.5)ï¼Œæˆ‘ä¸‹é¢åº¦ç›˜æä¾›äº†1809å’Œ1903ä¸¤ä¸ªç‰ˆæœ¬çš„åŠŸèƒ½æ¢å¤åŒ…ï¼Œè‡ªè¡Œé€‰æ‹©å³å¯ã€‚åŠŸèƒ½æ¢å¤åŒ…ä½¿ç”¨åéœ€è¦é‡å¯æ‰èƒ½ç”Ÿæ•ˆã€‚
 
-²Î¿¼ÏÂÍ¼µÄ²Ù×÷ĞŞ¸ÄÒ»ÏÂcmdµÄÊôĞÔ£¬²»È»°²×°WSL×ÓÏµÍ³ÊµÀı»á³ö´í
+å‚è€ƒä¸‹å›¾çš„æ“ä½œä¿®æ”¹ä¸€ä¸‹cmdçš„å±æ€§ï¼Œä¸ç„¶å®‰è£…WSLå­ç³»ç»Ÿå®ä¾‹ä¼šå‡ºé”™
 
+<<<<<<< HEAD
 ![CMDÉèÖÃ](https://github.com/lon91ong/smartdns4win/blob/master/img/cmd%20setting.png)
+=======
+![CMDè®¾ç½®](https://github.com/lon91ong/smartdns4win/blob/master/img/cmd%20setting.png)
+>>>>>>> dbdd83d83960cc6270c059f9f67552c18dc6a709
 
-²Î¿¼Î¢Èí¹Ù·½¡¶[ÊÖ¶¯ÏÂÔØÊÊÓÃÓÚ Linux µÄ Windows ×ÓÏµÍ³·¢ĞĞ°æ°ü](https://docs.microsoft.com/zh-cn/windows/wsl/install-manual)¡·ÏÂÔØDebian°ü£¬ĞŞ¸ÄÎÄ¼şÀàĞÍÎª `*.zip`£¬½âÑ¹ÖÁÄãÏëÒª°²×°µÄÂ·¾¶£¬±ÈÈç: `D:\Program Files\Debian`£¬Ö´ĞĞ`debian.exe`°²×°£¬°´ĞèÉèÖÃĞÂÓÃ»§Ãû³ÆºÍÃÜÂë...
+å‚è€ƒå¾®è½¯å®˜æ–¹ã€Š[æ‰‹åŠ¨ä¸‹è½½é€‚ç”¨äº Linux çš„ Windows å­ç³»ç»Ÿå‘è¡Œç‰ˆåŒ…](https://docs.microsoft.com/zh-cn/windows/wsl/install-manual)ã€‹ä¸‹è½½DebianåŒ…ï¼Œä¿®æ”¹æ–‡ä»¶ç±»å‹ä¸º `*.zip`ï¼Œè§£å‹è‡³ä½ æƒ³è¦å®‰è£…çš„è·¯å¾„ï¼Œæ¯”å¦‚: `D:\Program Files\Debian`ï¼Œæ‰§è¡Œ`debian.exe`å®‰è£…ï¼ŒæŒ‰éœ€è®¾ç½®æ–°ç”¨æˆ·åç§°å’Œå¯†ç ...
 
-### °²×°smartdns
+### å®‰è£…smartdns
 
-½«ÎÒ·ÖÏíµÄsmartdnsÑ¹Ëõ°ü½âÑ¹ÖÁ**²»º¬¿Õ¸ñµÄÂ·¾¶**ÖĞ£¬±ÈÈç: `D:\Tools\smartdns`
+å°†æˆ‘åˆ†äº«çš„smartdnså‹ç¼©åŒ…è§£å‹è‡³**ä¸å«ç©ºæ ¼çš„è·¯å¾„**ä¸­ï¼Œæ¯”å¦‚: `D:\Tools\smartdns`
 
-´Ó[Ô­ÏîÄ¿µÄRelease](https://github.com/pymumu/smartdns/releases)ÏÂÔØDebianÊÊÓÃµÄ°ü£º`smartdns.1.***.x86_64-debian-all.deb`£¬·ÅÈëÉÏÃæµÄÄ¿Â¼ÖĞ
+ä»[åŸé¡¹ç›®çš„Release](https://github.com/pymumu/smartdns/releases)ä¸‹è½½Debiané€‚ç”¨çš„åŒ…ï¼š`smartdns.1.***.x86_64-debian-all.deb`ï¼Œæ”¾å…¥ä¸Šé¢çš„ç›®å½•ä¸­
 
-¹ÜÀíÔ±È¨ÏŞÖ´ĞĞÅú´¦ÀíÎÄ¼ş `init.bat`£¬ÖĞ¼äÓĞÍ£¶ÙĞèÒªÊäÈëÉÏÃæ¸Õ¸ÕĞÂ½¨µÄÓÃ»§ÃÜÂë£¬Ò»Â·»Ø³µ¼´¿É
+ç®¡ç†å‘˜æƒé™æ‰§è¡Œæ‰¹å¤„ç†æ–‡ä»¶ `init.bat`ï¼Œä¸­é—´æœ‰åœé¡¿éœ€è¦è¾“å…¥ä¸Šé¢åˆšåˆšæ–°å»ºçš„ç”¨æˆ·å¯†ç ï¼Œä¸€è·¯å›è½¦å³å¯
 
-ÊÖ¶¯ÉèÖÃ±¾µØÁ¬½ÓµÄÊ×Ñ¡dnsÎª `127.0.0.1`¡£
+æ‰‹åŠ¨è®¾ç½®æœ¬åœ°è¿æ¥çš„é¦–é€‰dnsä¸º `127.0.0.1`ã€‚
 
+<<<<<<< HEAD
 ![DNSÉèÖÃ](https://github.com/lon91ong/smartdns4win/blob/master/img/DNS%20Setting.png)
+=======
+![DNSè®¾ç½®](https://github.com/lon91ong/smartdns4win/blob/master/img/DNS%20Setting.png)
+>>>>>>> dbdd83d83960cc6270c059f9f67552c18dc6a709
 
-´ò¿ªÃüÁîĞĞ´°¿Ú²âÊÔÒ»ÏÂ£¬`nslookup www.google.com`£¬³öÏÖÀàËÆÏÂÃæµÄ½á¹û¾ÍËµÃ÷³É¹¦ÁË£¡
+æ‰“å¼€å‘½ä»¤è¡Œçª—å£æµ‹è¯•ä¸€ä¸‹ï¼Œ`nslookup www.google.com`ï¼Œå‡ºç°ç±»ä¼¼ä¸‹é¢çš„ç»“æœå°±è¯´æ˜æˆåŠŸäº†ï¼
 
 ```bash
 C:\>nslookup www.google.com
-·şÎñÆ÷:  localdomain
+æœåŠ¡å™¨:  localdomain
 Address:  127.0.0.1
 
-·ÇÈ¨ÍşÓ¦´ğ:
+éæƒå¨åº”ç­”:
 DNS request timed out.
     timeout was 2 seconds.
-Ãû³Æ:    www.google.com
+åç§°:    www.google.com
 Address:  69.63.184.14
 ```
 
-**¹¤¾ß°ü¶ÈÅÌÁ´½Ó**: https://pan.baidu.com/s/1_WakgCRpOjahlw760igYNg ÌáÈ¡Âë: 2333
+**å·¥å…·åŒ…åº¦ç›˜é“¾æ¥**: https://pan.baidu.com/s/1_WakgCRpOjahlw760igYNg æå–ç : 2333
 
+<<<<<<< HEAD
 #### ¸ĞĞ»: 
 GitHubÓÃ»§ [rufengsuixing](https://github.com/rufengsuixing)? Ìá¹©µÄ[Win10Ò»¼ü°²×°½Å±¾](https://github.com/pymumu/smartdns/issues/107)
+=======
+#### æ„Ÿè°¢: 
+GitHubç”¨æˆ· [rufengsuixing](https://github.com/rufengsuixing)? æä¾›çš„[Win10ä¸€é”®å®‰è£…è„šæœ¬](https://github.com/pymumu/smartdns/issues/107)
+>>>>>>> dbdd83d83960cc6270c059f9f67552c18dc6a709
