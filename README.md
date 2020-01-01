@@ -1,0 +1,1 @@
+# smartdns4win
