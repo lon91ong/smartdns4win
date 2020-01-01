@@ -21,7 +21,7 @@ dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux 
 
 参考下图的操作修改一下cmd的属性，不然安装WSL子系统实例会出错
 
-![CMD设置](.\img\cmd setting.png)
+![CMD设置](https://github.com/lon91ong/smartdns4win/blob/master/img/cmd%20setting.png)
 
 参考微软官方《[手动下载适用于 Linux 的 Windows 子系统发行版包](https://docs.microsoft.com/zh-cn/windows/wsl/install-manual)》下载Debian包，修改文件类型为 `*.zip`，解压至你想要安装的路径，比如: `D:\Program Files\Debian`，执行`debian.exe`安装，按需设置新用户名称和密码...
 
@@ -35,7 +35,7 @@ dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux 
 
 手动设置本地连接的首选dns为 `127.0.0.1`。
 
-![DNS设置](.\img\DNS Setting.png)
+![DNS设置](https://github.com/lon91ong/smartdns4win/blob/master/img/DNS%20Setting.png)
 
 打开命令行窗口测试一下，`nslookup www.google.com`，出现类似下面的结果就说明成功了！
 
@@ -53,5 +53,5 @@ Address:  69.63.184.14
 
 **工具包度盘链接**: https://pan.baidu.com/s/1_WakgCRpOjahlw760igYNg 提取码: 2333
 
-### 感谢: 
+#### 感谢: 
 GitHub用户 [rufengsuixing](https://github.com/rufengsuixing)? 提供的[Win10一键安装脚本](https://github.com/pymumu/smartdns/issues/107)
