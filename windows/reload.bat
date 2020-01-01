@@ -10,7 +10,7 @@ wsl sudo cp -avf %DIR_IN_WSL%/../conf/* /etc/smartdns/
 @  exit 1
 )
 
-wsl sudo /etc/init.d/smartdns restart
+wsl sudo /usr/sbin/smartdns restart
 @IF NOT %ERRORLEVEL% == 0 (
 @  echo reload smartdns failed.
 @  pause
