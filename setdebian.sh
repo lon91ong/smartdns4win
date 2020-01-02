@@ -27,6 +27,8 @@ server 10.0.0.9
 server 211.157.15.189
 server 210.22.84.3
 server 203.240.193.11
+server-tls 8.8.8.8:853
+server-https https://cloudflare-dns.com/dns-query
 server-tcp 8.8.8.8
 server-tcp 182.254.116.116
 server-tcp 114.114.114.114
