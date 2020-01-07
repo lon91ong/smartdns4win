@@ -124,6 +124,21 @@ SageMath9.0下载：
 
 .. image:: images/jupyter.png
 
+SageMath使用笔记
+================
+
+后台方式运行 `notebook` 服务:
+
+  nohup sage -n > notebook.log 2>&1 &
+
+使用 `jupyterlab` :
+
+  sage --pip install jupyterlab #安装
+
+  sage -n jupyterlab #启动
+
+  nohup sage -n jupyterlab > notebook.log 2>&1 & #后台方式
+
 ***
 END
 ***
