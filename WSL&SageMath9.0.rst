@@ -175,6 +175,14 @@ Node.js其它命令
 
     sudo ln -s /mnt/e/Programs/node-v10.18.0-linux-x64/bin/docsify /usr/local/bin/docsify
 
+********
+学习资料
+********
+
+`《动手学深度学习》 <http://zh.d2l.ai/>`_ ，
+`PyTorch版GitHub项目 <https://github.com/ShusenTang/Dive-into-DL-PyTorch>`_ 
+
+
 ***
 END
 ***
