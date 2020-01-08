@@ -54,7 +54,7 @@ CMD命令
 Debian安装
 ==========
 
-参考《 `手动下载适用于 Linux 的 Windows 子系统发行版包 <https://links.jianshu.com/go?to=https%3A%2F%2Fdocs.microsoft.com%2Fzh-cn%2Fwindows%2Fwsl%2Finstall-manual>`_ 》的说明，下载官方Debian9的包，
+参考《 `手动下载适用于 Linux 的 Windows 子系统发行版包 <https://docs.microsoft.com/zh-cn/windows/wsl/install-manual>`_ 》的说明，下载官方Debian9的包，
 或者页首的百度网盘中有自制的Debian10包。
 
 下载后解压至 **无空格** 目录，这里以 `E:\\Programs` 为例，
@@ -81,7 +81,7 @@ deb方式
 
 `SageMath的deb包下载`_ 选择适合的包下载，我这里选的是 `Debian 10(Buster)` 适用的 `sagemath_8.6-6_amd64.deb`
 
-.. _SageMath的deb包下载: https://links.jianshu.com/go?to=https%3A%2F%2Fpkgs.org%2Fdownload%2Fsagemath
+.. _SageMath的deb包下载: https://pkgs.org/download/sagemath
 
 .. code-block:: bash
 
@@ -102,7 +102,7 @@ SageMath9.0下载：
 
 这里选择： `sage-9.0-Debian_GNU_Linux_10-x86_64.tar.bz2`_ 
 
-.. _sage-9.0-Debian_GNU_Linux_10-x86_64.tar.bz2: https://links.jianshu.com/go?to=https%3A%2F%2Fmirrors.tuna.tsinghua.edu.cn%2Fsagemath%2Flinux%2F64bit%2Fsage-9.0-Debian_GNU_Linux_10-x86_64.tar.bz2
+.. _sage-9.0-Debian_GNU_Linux_10-x86_64.tar.bz2: https://mirrors.tuna.tsinghua.edu.cn/sagemath/linux/64bit/sage-9.0-Debian_GNU_Linux_10-x86_64.tar.bz2
 
 下载完解压(压缩包2G，解压后7G+)，初始化，修改环境变量PATH：
 
@@ -138,6 +138,31 @@ SageMath使用笔记
   sage -n jupyterlab #启动
 
   nohup sage -n jupyterlab > notebook.log 2>&1 & #后台方式
+
+`安装PyTorch`_ 
+
+.. _安装PyTorch: https://pytorch.org/
+
+.. image:: images/PyTorch.png
+
+安装Node.js
+-----------
+
+下载`node-v10.18.0-linux-x64.tar.xz`_ 
+
+.. _node-v10.18.0-linux-x64.tar.xz: https://nodejs.org/dist/v10.18.0/node-v10.18.0-linux-x64.tar.xz
+
+解压-软连接
+
+.. code-block:: bash
+
+    #wget https://nodejs.org/dist/v10.18.0/node-v10.18.0-linux-x64.tar.xz
+
+    tar xJf /mnt/e/node-v10.18.0-linux-x64.tar.xz -C /mnt/e/Programs
+
+    sudo ln -s /mnt/e/Programs/node-v10.18.0-linux-x64/bin/node /usr/local/bin/node
+
+    sudo ln -s /mnt/e/Programs/node-v10.18.0-linux-x64/bin/npm /usr/local/bin/npm
 
 ***
 END
