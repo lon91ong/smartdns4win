@@ -148,21 +148,32 @@ SageMath使用笔记
 安装Node.js
 -----------
 
-下载`node-v10.18.0-linux-x64.tar.xz`_ 
-
-.. _node-v10.18.0-linux-x64.tar.xz: https://nodejs.org/dist/v10.18.0/node-v10.18.0-linux-x64.tar.xz
-
+下载：`node-v10.18.0-linux-x64.tar.xz <https://nodejs.org/dist/v10.18.0/node-v10.18.0-linux-x64.tar.xz>`_，
 解压-软连接
 
 .. code-block:: bash
 
-    #wget https://nodejs.org/dist/v10.18.0/node-v10.18.0-linux-x64.tar.xz
+    #wget https://nodejs.org/dist/v10.18.0/node-v10.18.0-linux-x64.tar.xz   #下载
 
-    tar xJf /mnt/e/node-v10.18.0-linux-x64.tar.xz -C /mnt/e/Programs
+    tar xJf /mnt/e/node-v10.18.0-linux-x64.tar.xz -C /mnt/e/Programs   #解压
 
     sudo ln -s /mnt/e/Programs/node-v10.18.0-linux-x64/bin/node /usr/local/bin/node
 
     sudo ln -s /mnt/e/Programs/node-v10.18.0-linux-x64/bin/npm /usr/local/bin/npm
+
+Node.js其它命令
+
+.. code-block:: bash
+
+    npm config get registry  #查看registry，默认为：https://registry.npmjs.org/
+
+    npm config set registry https://registry.npm.taobao.org  #切换阿里镜像
+
+    npm install --registry=https://registry.npm.taobao.org   #或者直接这样装
+
+    npm i docsify-cli -g   #安装docsify
+
+    sudo ln -s /mnt/e/Programs/node-v10.18.0-linux-x64/bin/docsify /usr/local/bin/docsify
 
 ***
 END
